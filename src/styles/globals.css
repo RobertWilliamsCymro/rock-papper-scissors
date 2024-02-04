@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.scissorsGradient {
+  background: radial-gradient(circle, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.paperGradient {
+  background: radial-gradient(circle, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.rockGradient {
+  background: radial-gradient(circle, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.lizardGradient {
+  background: radial-gradient(circle, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+}
+
+.cyanGradient {
+  background: radial-gradient(circle, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+}
+
+.scoreText {
+  color: hsl(229, 64%, 46%);
+}
+
+.headerOutline {
+  color: hsl(217, 16%, 45%);
 }
